@@ -4,24 +4,26 @@
       <div>
       <div>
       <table>
+      <tbody>
         <tr>
         <th>Name</th>
         <th>Age</th>
         </tr>
         {
           array.map((item,idx) => {
-            return <tr><td key={idx}>{item.name}</td> <td key={idx*5}>{item.age}</td> </tr>
+            return <tr key={idx}><td>{item.name}</td><td>{item.age}</td></tr>
           })
         }
     
         <tr> 
         <td> <button onClick={(array)=>{
-             return (
                 props.array.splice(array.length-1, 1)
+             return (
+                props.array
              )
-
         }}>Delete element</button></td>
         </tr>
+        </tbody>
       </table>
       </div>
       </div> 

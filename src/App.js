@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Names from './Names';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Names array = {[{name: 'Ahmad', age: 30},
+                     {name: 'Yousef', age: 12},
+                     {name: 'Shatha', age: 14},
+                     {name: 'Rana', age: 22},
+                     {name: 'Osama', age: 22},
+                     {name: 'Ahmad', age: 38}]}/>
     </div>
   );
 }
